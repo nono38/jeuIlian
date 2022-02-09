@@ -19,25 +19,27 @@ basic.forever(function () {
         mechant = mechant + 1
         led.plot(2, mechant)
     }
+    mechant = -1
     for (let index = 0; index < 6; index++) {
         basic.pause(1000)
-        led.unplot(2, mechant)
         mechant = mechant + 1
         led.plot(4, mechant)
+        led.unplot(2, mechant)
     }
+    mechant = -1
     for (let index = 0; index < 6; index++) {
         basic.pause(1000)
-        led.unplot(4, mechant)
         mechant = mechant + 1
+        led.unplot(4, mechant)
         led.plot(2, mechant)
     }
+    mechant = -1
     for (let index = 0; index < 6; index++) {
         basic.pause(1000)
-        led.unplot(2, mechant)
         mechant = mechant + 1
         led.plot(1, mechant)
+        led.unplot(1, mechant)
     }
-    led.unplot(1, mechant)
 })
 basic.forever(function () {
 	
